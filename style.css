@@ -1,0 +1,18 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #eaf2ef; color: #142d28; font: 1rem system-ui, sans-serif; }
+main { width: min(92%, 36rem); margin: clamp(2rem, 12vh, 8rem) auto; padding: clamp(1rem, 5vw, 2.5rem); background: white; border-radius: 1rem; box-shadow: 0 12px 40px #142d2815; }
+h1 { margin: 0 0 1.6rem; letter-spacing: -.04em; }
+label { display: inline-block; }
+.entry { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .4rem; }
+input:not([type=checkbox]), button { font: inherit; padding: .6rem .8rem; border: 1px solid #68847a; border-radius: .5rem; }
+.entry input { flex: 1 1 10rem; min-width: 0; }
+button { background: #155b49; color: white; cursor: pointer; }
+button:hover { background: #104537; }
+#status { color: #425b53; }
+ul { list-style: none; padding: 0; margin-bottom: 0; }
+li { display: flex; align-items: center; justify-content: space-between; gap: .75rem; padding: .65rem 0; border-top: 1px solid #dae4df; }
+li label { display: flex; align-items: center; gap: .5rem; overflow-wrap: anywhere; min-width: 0; }
+li input { accent-color: #155b49; }
+li input:checked + span { text-decoration: line-through; }
+li button { color: #155b49; background: white; }
+li button:hover { color: white; }

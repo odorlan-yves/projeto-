@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="pt-BR">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lista de tarefas</title>
+<link rel="stylesheet" href="./style.css">
+<main>
+  <h1>Lista de tarefas</h1>
+  <form>
+    <label for="task">Nova tarefa</label>
+    <div class="entry">
+      <input id="task" required maxlength="120" placeholder="Ex.: Revisar a atividade">
+      <button>Adicionar</button>
+    </div>
+  </form>
+  <p id="status" role="status"></p>
+  <ul aria-label="Tarefas"></ul>
+</main>
+<script type="module" src="./app.mjs"></script>
+</html>
